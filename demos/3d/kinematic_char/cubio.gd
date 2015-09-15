@@ -91,5 +91,5 @@ func _ready():
 
 
 func _on_tcube_body_enter( body ):
-	get_node("../ty").show()
-	pass # replace with function body
+	if body.get_name() == "cubio":
+		get_node("../ty").show()
